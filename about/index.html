@@ -83,6 +83,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="lolDragon" type="application/atom+xml" />
+
 
 
 
@@ -93,18 +95,18 @@
 
 
 
-<meta name="description" content="Blog前端发展很快，只有不断努力，才不会后退。 本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。 博客重点在于分享web前端开发知识，或涉其它。 文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。 ContactName: 欧阳海龙 City：广东东莞 Github：lolDragon QQ：495879208 Email：495879208@qq.com Donate">
+<meta name="description" content="Blog前端发展很快，只有不断努力，才不会后退。 本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。 博客重点在于分享web前端开发知识，或涉其它。 文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。 ContactName： 欧阳海龙 City：广东东莞 Github：lolDragon QQ：495879208 Email：495879208@qq.com Donate">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="lolDragon">
-<meta property="og:description" content="Blog前端发展很快，只有不断努力，才不会后退。 本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。 博客重点在于分享web前端开发知识，或涉其它。 文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。 ContactName: 欧阳海龙 City：广东东莞 Github：lolDragon QQ：495879208 Email：495879208@qq.com Donate">
-<meta property="og:image" content="http://yoursite.com/images/paul.jpg">
-<meta property="og:updated_time" content="2017-07-04T08:43:19.000Z">
+<meta property="og:description" content="Blog前端发展很快，只有不断努力，才不会后退。 本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。 博客重点在于分享web前端开发知识，或涉其它。 文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。 ContactName： 欧阳海龙 City：广东东莞 Github：lolDragon QQ：495879208 Email：495879208@qq.com Donate">
+<meta property="og:image" content="http://yoursite.com/images/weixinpay.png">
+<meta property="og:updated_time" content="2017-07-05T01:14:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Blog前端发展很快，只有不断努力，才不会后退。 本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。 博客重点在于分享web前端开发知识，或涉其它。 文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。 ContactName: 欧阳海龙 City：广东东莞 Github：lolDragon QQ：495879208 Email：495879208@qq.com Donate">
-<meta name="twitter:image" content="http://yoursite.com/images/paul.jpg">
+<meta name="twitter:description" content="Blog前端发展很快，只有不断努力，才不会后退。 本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。 博客重点在于分享web前端开发知识，或涉其它。 文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。 ContactName： 欧阳海龙 City：广东东莞 Github：lolDragon QQ：495879208 Email：495879208@qq.com Donate">
+<meta name="twitter:image" content="http://yoursite.com/images/weixinpay.png">
 
 
 
@@ -121,11 +123,11 @@
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: '47EQC7BIIN',
+      apiKey: '70a89598502349a337c1666364d407ce',
+      indexName: 'hexo',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      labels: {"input_placeholder":"输入关键词进行搜索","hits_empty":"找不到关于${query}的文章","hits_stats":"共找到${hits}篇文章，花了${time} ms"}
     }
   };
 </script>
@@ -250,9 +252,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -282,13 +322,13 @@
 <p>本博客用于记录平时工作和学习中的知识点，总结经验，用于分享。</p>
 <p>博客重点在于分享web前端开发知识，或涉其它。</p>
 <p>文章为作者原创，转发请保留原地址，商业用途请联系作者，谢谢配合。</p>
-<h3 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h3><p>Name: 欧阳海龙</p>
+<h3 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h3><p>Name： 欧阳海龙</p>
 <p>City：广东东莞</p>
 <p>Github：lolDragon</p>
 <p>QQ：495879208</p>
 <p>Email：495879208@qq.com</p>
 <h3 id="Donate"><a href="#Donate" class="headerlink" title="Donate"></a>Donate</h3><p>如果您觉得有文章能帮助到你，那就请作者喝杯咖啡吧！</p>
-<p><img src="/images/paul.jpg" alt=""></p>
+<p><img src="/images/weixinpay.png" alt=""></p>
 
     
   </div>
@@ -300,6 +340,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
     
   </div>
 
@@ -347,7 +389,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -358,7 +400,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -369,7 +411,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -377,6 +419,13 @@
 
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">
@@ -409,33 +458,6 @@
                 </a>
               </span>
             
-              <span class="links-of-author-item">
-                <a href="https://juejin.im/user/58bd32b7128fe100644d95e2" target="_blank" title="掘进">
-                  
-                    <i class="fa fa-fw fa-spinner"></i>
-                  
-                  掘进
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://segmentfault.com/u/loldragon" target="_blank" title="SegmentFault">
-                  
-                    <i class="fa fa-fw fa-scribd"></i>
-                  
-                  SegmentFault
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/ou-yang-hai-long-62/activities" target="_blank" title="知乎">
-                  
-                    <i class="fa fa-fw fa-drupal"></i>
-                  
-                  知乎
-                </a>
-              </span>
-            
           
         </div>
 
@@ -452,7 +474,35 @@
             <ul class="links-of-blogroll-list">
               
                 <li class="links-of-blogroll-item">
-                  <a href="https://www.baidu.com/" title="百度" target="_blank">百度</a>
+                  <a href="http://www.alloyteam.com/" title="AlloyTeam" target="_blank">AlloyTeam</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://isux.tencent.com/category/fd" title="腾讯ISUX" target="_blank">腾讯ISUX</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://qqfe.org/" title="腾讯FERD" target="_blank">腾讯FERD</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://efe.baidu.com/" title="百度EFE" target="_blank">百度EFE</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://fex.baidu.com/" title="百度FEX" target="_blank">百度FEX</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://taobaofed.org/" title="淘宝前端团队" target="_blank">淘宝前端团队</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.qianduan.net/" title="前端观察" target="_blank">前端观察</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.niudana.com/" title="牛大拿设计" target="_blank">牛大拿设计</a>
                 </li>
               
             </ul>
@@ -502,6 +552,8 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">lolDragon</span>
+  <span class="line">|</span>
+  <span class="donate"><a href="https://loldragon.github.io/images/weixinpay.png">赞赏</a></span>
 </div>
 
 
@@ -631,6 +683,14 @@
 
 
   
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2138032"></script>
+      <!-- UY END -->
+    
+  
 
 
 
@@ -648,8 +708,128 @@
 
 
 
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
 
   
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("Ptq5AFGaLnmRGnNRSsWBkpzL-gzGzoHsz", "nOMAkKHrsf9jSQooWpj7X2Nr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lolDragon</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-07-05T08:32:01.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>lolDragon</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于hexo + NexT主题+github.io搭建博客的过程总结</title>
+    <link href="http://yoursite.com/2017/07/05/hexo-start/"/>
+    <id>http://yoursite.com/2017/07/05/hexo-start/</id>
+    <published>2017-07-05T08:32:01.000Z</published>
+    <updated>2017-07-05T08:32:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>﻿关于hexo + NexT主题+github.io搭建博客的过程总结<br><a id="more"></a></p>
+<h4 id="文献资料："><a href="#文献资料：" class="headerlink" title="文献资料："></a>文献资料：</h4><p>1.官网</p>
+<p>&ensp;&ensp;&ensp;<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题官网</a></p>
+<p>&ensp;&ensp;&ensp;<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></p>
+<p>2.其他</p>
+<p>&ensp;&ensp;&ensp;<a href="http://www.shellsec.com/news/39146.html" target="_blank" rel="external">【干货】2个小时教你hexo博客添加评论、打赏、RSS等功能</a>               </p>
+<p>&ensp;&ensp;&ensp;<a href="https://www.qcloud.com/community/article/989575001490326243?fromSource=gwzcw.84397.84397.84397" target="_blank" rel="external">使用 Github 和 Hexo 快速搭建个人博客</a></p>
+<p>&ensp;&ensp;&ensp;<a href="http://cyzus.github.io/2015/06/21/github-build-blog/" target="_blank" rel="external">傻瓜都可以利用github pages建博客</a></p>
+<p>&ensp;&ensp;&ensp;<a href="http://blog.csdn.net/u011303443/article/details/52333695" target="_blank" rel="external">hexo博客安装RSS插件</a></p>
+<p>&ensp;&ensp;&ensp;<a href="http://www.befuncool.com/2016/05/30/Hexo%E9%9B%86%E6%88%90Algolia%E6%90%9C%E7%B4%A2%E6%8F%92%E4%BB%B6/#" target="_blank" rel="external">Hexo集成Algolia搜索插件</a></p>
+<p>&ensp;&ensp;&ensp;<a href="http://www.jeyzhang.com/hexo-next-add-post-views.html" target="_blank" rel="external">Hexo的NexT主题个性化：添加文章阅读量</a></p>
+<h4 id="搭建一些注意事项："><a href="#搭建一些注意事项：" class="headerlink" title="搭建一些注意事项："></a>搭建一些注意事项：</h4><p>1.创建github仓库时，记住仓库的名字命名为：xxx.github.io，这样你生成的github的博客主页网址就可以是：<a href="https://lxxx.github.io/" target="_blank" rel="external">https://lxxx.github.io/</a></p>
+<p>2.创建标签页和分类页时，记住添加一下type:xxx,比如type:’tags’ ;默认这里生成的index.md是么没有的；如果不设置标签页中不会出现对应的标签值；</p>
+<p>3.在安装algolia搜索功能时，在采用默认安装hexo-algolia插件时生成的版本为1.1.0时，会出现在hexo algolia上传数据，更新index失败的情况；错误提示为：“Please provide an API key”，这时候改为安装回“npm install hexo-algolia@0.2.0 –save” 0.2.0版本时可以正常更新；</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;﻿关于hexo + NexT主题+github.io搭建博客的过程总结&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+    
+  </entry>
+  
+</feed>
